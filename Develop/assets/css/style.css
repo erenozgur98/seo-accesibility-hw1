@@ -4,11 +4,12 @@
     margin: 0;
 }
 
-/* here is the body of the website */
+/* this where body starts */
 body {
     background-color: #d9dcd6;
 }
 
+/* this is where header starts */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,16 +17,19 @@ body {
     color: #ffffff;
 }
 
+/* this line sets the headers font and display */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* this changes the color of words seo in the header */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+/*  this is to float the links on the nav bar to right and make it look good */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,24 +37,30 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+/* this line supposed to remove the list styles like square or dots next to the links but even taking this line off doesn't make a change */
+/* .header nav ul {
     list-style-type: none;
-}
+} */
 
-.header div ul li {
+
+/* this line keeps the links on the nav next to each other */
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* this is for the links, changing their color and removing the underline */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* this one sets the font sizes for all the paragraphs */
 p {
     font-size: 16px;
 }
 
+/* this is the main big image of the website */
 .hero {
     height: 800px;
     width: 100%;
@@ -60,22 +70,26 @@ p {
     background-position: center;
 }
 
+/* this is to set the margin for the 2 images and their float */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* this one is the one image on the right, this sets float and margin size */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* this line sets the width margin and display for entire main */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* this one is for the last section, the right side */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -87,108 +101,48 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
+/* took all the benefit brand+lead+cost and replaced with aside tag */
+aside {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
+/* replaced all 3 h3 tags with aside h3 instead */
+aside h3 {
+    margin-top: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* replaced all 3 lines of code img with aside img */
+aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+/* removed huge 3 lines of codes with simple one mainContent */
+.mainContent {
+   margin-bottom: 20px;
+   padding: 50px;
+   height: 300px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: #0072bb;
+   color: #ffffff; 
 }
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* replaced all 3 lines of codes with maincontent img */
+.mainContent img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* replaced 3 lines of code with maincontent h2 */
+.mainContent h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 36px; 
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/* with mainContent i replaced all 9 lines of code with 3 simple ones doing same job */
 
 .footer {
     padding: 30px;
