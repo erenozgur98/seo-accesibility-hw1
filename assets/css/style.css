@@ -85,7 +85,6 @@ div {
 }
 
 /* this line sets the width margin and display for entire main */
-/* added font-size here instead of p tag to remove p from css completely */
 main {
     width: 75%;
     display: inline-block;
